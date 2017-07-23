@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t craftsmenlabs/upload-ssh-key .
+
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD2"
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then docker push hylke1982/upload-ssh-key; fi'
