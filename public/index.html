@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Provide SSH key</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>Provide public SSH Key</h1>
+<p>Paste a public SSH key and place it on the file system</p>
+
+<form id="target" class="pure-form">
+
+    <fieldset class="pure-group">
+        <label for="sshKey">Paste public SSH key</label>
+        <textarea id="sshKey" placeholder="Paste public SSH key" class="pure-u-1-2"></textarea>
+    </fieldset>
+
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="application/javascript" src="js/sshkey.js"></script>
+
+</body>
+
+</html>

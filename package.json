@@ -1,0 +1,17 @@
+{
+  "name": "upload-ssh-key",
+  "version": "1.0.0",
+  "description": "Paste a SSH key and place it on the designated place on the file system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hylke Stapersma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "command-line-args": "^4.0.6",
+    "express": "^4.15.3",
+    "sshpk": "^1.13.1"
+  }
+}
