@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker build -t craftsmenlabs/upload-ssh-key .
+  - docker build -t $DOCKER_USERNAME/upload-ssh-key .
 
 
 after_success:
